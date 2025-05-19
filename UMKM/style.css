@@ -1,0 +1,188 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffefb;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #ff914d, #ffe066);
+    padding: 4rem 2rem 6rem 2rem;
+    text-align: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    clip-path: ellipse(140% 100% at 50% 0%);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  header p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dekorasi emoji di header */
+  header::before {
+    content: "🍛 🍽️ 🥥"; /* Nasi uduk, lontong sayur, nasi kuning (ilustrasi) */
+    font-size: 1.8rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  header::after {
+    content: "🥚 🍗 🍴";
+    font-size: 1.8rem;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    animation: floatReverse 6s ease-in-out infinite;
+  }
+  
+  /* Animasi emoji */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(8px); }
+  }
+  
+  @keyframes floatReverse {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  /* Menu Section */
+  .menu-section {
+    padding: 2rem;
+    background: #fefae0;
+  }
+  
+  .menu-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .menu-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 4rem 2rem 0 2rem;
+    background-color: #fffaf1;
+    color: #333;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact-icon {
+    font-size: 5rem;
+    color: #f28c28;
+  }
+  
+  .contact-card {
+    background-color: #fff0da;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    flex: 1;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  /* Button Style */
+  button {
+    padding: 10px 20px;
+    background: #ff914d;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1.5rem;
+  }
+  
+  button:hover {
+    background: #e76f00;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(135deg, #ffe066, #ff914d);
+    padding: 3rem 2rem 4rem 2rem;
+    text-align: center;
+    color: white;
+    clip-path: ellipse(140% 100% at 50% 100%);
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+  
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }  
